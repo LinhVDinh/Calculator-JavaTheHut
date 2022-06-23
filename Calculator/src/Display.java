@@ -71,6 +71,12 @@ public class Display extends JLabel implements ActionListener{
 		else if (input.equals("Clear")) {
 			// insert clear code USING a different method below
 		}
+		else if(input.equals("Enter")) {
+			// insert code for enter
+		}
+		else if (input.equals("ANS")) {
+			// insert code for ANS
+		}
 		else if (input.equals("\u232B")) {
 			// insert code for
 		}

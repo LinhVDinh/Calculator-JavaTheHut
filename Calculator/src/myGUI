@@ -1,1 +1,270 @@
-teat
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.Color;
+import java.awt.SystemColor;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class myGUI {
+
+	private JFrame frame;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					myGUI window = new myGUI();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public myGUI() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(new Color(0, 0, 0));
+		frame.setBounds(100, 100, 699, 421);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(123, 6, 453, 100);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton btnNewButton = new JButton("=");
+		btnNewButton.setBackground(Color.BLACK);
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setFont(new Font("Lucida Grande", Font.PLAIN, 90));
+		btnNewButton.setBounds(576, 6, 117, 100);
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnX_1 = new JButton("1");
+		btnX_1.setForeground(Color.WHITE);
+		btnX_1.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1.setBackground(Color.BLACK);
+		btnX_1.setBounds(6, 105, 85, 76);
+		frame.getContentPane().add(btnX_1);
+		
+		JButton btnX_1_1 = new JButton("4");
+		btnX_1_1.setForeground(Color.WHITE);
+		btnX_1_1.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_1.setBackground(Color.BLACK);
+		btnX_1_1.setBounds(6, 175, 85, 76);
+		frame.getContentPane().add(btnX_1_1);
+		
+		JButton btnX_1_2 = new JButton("7");
+		btnX_1_2.setForeground(Color.WHITE);
+		btnX_1_2.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_2.setBackground(Color.BLACK);
+		btnX_1_2.setBounds(6, 245, 85, 76);
+		frame.getContentPane().add(btnX_1_2);
+		
+		JButton btnX_1_3 = new JButton("0");
+		btnX_1_3.setForeground(Color.WHITE);
+		btnX_1_3.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_3.setBackground(Color.BLACK);
+		btnX_1_3.setBounds(6, 315, 85, 76);
+		frame.getContentPane().add(btnX_1_3);
+		
+		JButton btnX_1_4 = new JButton("2");
+		btnX_1_4.setForeground(Color.WHITE);
+		btnX_1_4.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4.setBackground(Color.BLACK);
+		btnX_1_4.setBounds(86, 105, 85, 76);
+		frame.getContentPane().add(btnX_1_4);
+		
+		JButton btnX_1_4_1 = new JButton("5");
+		btnX_1_4_1.setForeground(Color.WHITE);
+		btnX_1_4_1.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4_1.setBackground(Color.BLACK);
+		btnX_1_4_1.setBounds(86, 175, 85, 76);
+		frame.getContentPane().add(btnX_1_4_1);
+		
+		JButton btnX_1_4_2 = new JButton("8");
+		btnX_1_4_2.setForeground(Color.WHITE);
+		btnX_1_4_2.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4_2.setBackground(Color.BLACK);
+		btnX_1_4_2.setBounds(86, 245, 85, 76);
+		frame.getContentPane().add(btnX_1_4_2);
+		
+		JButton btnX_1_4_3 = new JButton(".");
+		btnX_1_4_3.setForeground(Color.WHITE);
+		btnX_1_4_3.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4_3.setBackground(Color.BLACK);
+		btnX_1_4_3.setBounds(86, 315, 85, 76);
+		frame.getContentPane().add(btnX_1_4_3);
+		
+		JButton btnX_1_4_4 = new JButton("3");
+		btnX_1_4_4.setForeground(Color.WHITE);
+		btnX_1_4_4.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4_4.setBackground(Color.BLACK);
+		btnX_1_4_4.setBounds(166, 105, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4);
+		
+		JButton btnX_1_4_5 = new JButton("9");
+		btnX_1_4_5.setForeground(Color.WHITE);
+		btnX_1_4_5.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4_5.setBackground(Color.BLACK);
+		btnX_1_4_5.setBounds(166, 245, 85, 76);
+		frame.getContentPane().add(btnX_1_4_5);
+		
+		JButton btnX_1_4_6 = new JButton("←");
+		btnX_1_4_6.setForeground(Color.WHITE);
+		btnX_1_4_6.setFont(new Font("Lucida Grande", Font.PLAIN, 70));
+		btnX_1_4_6.setBackground(Color.BLACK);
+		btnX_1_4_6.setBounds(166, 315, 85, 76);
+		frame.getContentPane().add(btnX_1_4_6);
+		
+		JButton btnX_1_4_7 = new JButton("6");
+		btnX_1_4_7.setForeground(Color.WHITE);
+		btnX_1_4_7.setFont(new Font("Lucida Grande", Font.PLAIN, 80));
+		btnX_1_4_7.setBackground(Color.BLACK);
+		btnX_1_4_7.setBounds(166, 175, 85, 76);
+		frame.getContentPane().add(btnX_1_4_7);
+		
+		JButton btnNewButton_3 = new JButton("CLR");
+		btnNewButton_3.setForeground(Color.WHITE);
+		btnNewButton_3.setFont(new Font("Lucida Grande", Font.PLAIN, 50));
+		btnNewButton_3.setBackground(Color.BLACK);
+		btnNewButton_3.setBounds(569, 105, 124, 76);
+		frame.getContentPane().add(btnNewButton_3);
+		
+		JButton btnNewButton_3_1 = new JButton("-");
+		btnNewButton_3_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_3_1.setForeground(Color.WHITE);
+		btnNewButton_3_1.setFont(new Font("Lucida Grande", Font.PLAIN, 90));
+		btnNewButton_3_1.setBackground(Color.BLACK);
+		btnNewButton_3_1.setBounds(549, 175, 144, 111);
+		frame.getContentPane().add(btnNewButton_3_1);
+		
+		JButton btnNewButton_3_1_1 = new JButton("+");
+		btnNewButton_3_1_1.setForeground(Color.WHITE);
+		btnNewButton_3_1_1.setFont(new Font("Lucida Grande", Font.PLAIN, 90));
+		btnNewButton_3_1_1.setBackground(Color.BLACK);
+		btnNewButton_3_1_1.setBounds(549, 281, 144, 111);
+		frame.getContentPane().add(btnNewButton_3_1_1);
+		
+		JButton btnNewButton_1 = new JButton("Ans");
+		btnNewButton_1.setForeground(Color.WHITE);
+		btnNewButton_1.setFont(new Font("Lucida Grande", Font.PLAIN, 55));
+		btnNewButton_1.setBackground(Color.BLACK);
+		btnNewButton_1.setBounds(6, 6, 117, 100);
+		frame.getContentPane().add(btnNewButton_1);
+		
+		JButton btnNewButton_3_1_2 = new JButton("÷");
+		btnNewButton_3_1_2.setForeground(Color.WHITE);
+		btnNewButton_3_1_2.setFont(new Font("Lucida Grande", Font.PLAIN, 90));
+		btnNewButton_3_1_2.setBackground(Color.BLACK);
+		btnNewButton_3_1_2.setBounds(409, 175, 144, 111);
+		frame.getContentPane().add(btnNewButton_3_1_2);
+		
+		JButton btnNewButton_3_1_3 = new JButton("x");
+		btnNewButton_3_1_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_3_1_3.setForeground(Color.WHITE);
+		btnNewButton_3_1_3.setFont(new Font("Lucida Grande", Font.PLAIN, 90));
+		btnNewButton_3_1_3.setBackground(Color.BLACK);
+		btnNewButton_3_1_3.setBounds(409, 281, 144, 111);
+		frame.getContentPane().add(btnNewButton_3_1_3);
+		
+		JButton btnX_1_4_4_1 = new JButton("(");
+		btnX_1_4_4_1.setForeground(Color.WHITE);
+		btnX_1_4_4_1.setFont(new Font("Lucida Grande", Font.PLAIN, 55));
+		btnX_1_4_4_1.setBackground(Color.BLACK);
+		btnX_1_4_4_1.setBounds(249, 105, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1);
+		
+		JButton btnX_1_4_4_2 = new JButton(")");
+		btnX_1_4_4_2.setForeground(Color.WHITE);
+		btnX_1_4_4_2.setFont(new Font("Lucida Grande", Font.PLAIN, 55));
+		btnX_1_4_4_2.setBackground(Color.BLACK);
+		btnX_1_4_4_2.setBounds(329, 105, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_2);
+		
+		JButton btnX_1_4_4_1_1 = new JButton("sin");
+		btnX_1_4_4_1_1.setForeground(Color.WHITE);
+		btnX_1_4_4_1_1.setFont(new Font("Lucida Grande", Font.PLAIN, 50));
+		btnX_1_4_4_1_1.setBackground(Color.BLACK);
+		btnX_1_4_4_1_1.setBounds(249, 175, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1_1);
+		
+		JButton btnX_1_4_4_1_2 = new JButton("Inv");
+		btnX_1_4_4_1_2.setForeground(Color.WHITE);
+		btnX_1_4_4_1_2.setFont(new Font("Lucida Grande", Font.PLAIN, 50));
+		btnX_1_4_4_1_2.setBackground(Color.BLACK);
+		btnX_1_4_4_1_2.setBounds(329, 175, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1_2);
+		
+		JButton btnX_1_4_4_1_3 = new JButton("cos");
+		btnX_1_4_4_1_3.setForeground(Color.WHITE);
+		btnX_1_4_4_1_3.setFont(new Font("Lucida Grande", Font.PLAIN, 45));
+		btnX_1_4_4_1_3.setBackground(Color.BLACK);
+		btnX_1_4_4_1_3.setBounds(249, 245, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1_3);
+		
+		JButton btnX_1_4_4_1_4 = new JButton("ln");
+		btnX_1_4_4_1_4.setForeground(Color.WHITE);
+		btnX_1_4_4_1_4.setFont(new Font("Lucida Grande", Font.PLAIN, 50));
+		btnX_1_4_4_1_4.setBackground(Color.BLACK);
+		btnX_1_4_4_1_4.setBounds(329, 245, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1_4);
+		
+		JButton btnX_1_4_4_1_5 = new JButton("tan");
+		btnX_1_4_4_1_5.setForeground(Color.WHITE);
+		btnX_1_4_4_1_5.setFont(new Font("Lucida Grande", Font.PLAIN, 45));
+		btnX_1_4_4_1_5.setBackground(Color.BLACK);
+		btnX_1_4_4_1_5.setBounds(249, 315, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1_5);
+		
+		JButton btnX_1_4_4_1_6 = new JButton("log");
+		btnX_1_4_4_1_6.setForeground(Color.WHITE);
+		btnX_1_4_4_1_6.setFont(new Font("Lucida Grande", Font.PLAIN, 45));
+		btnX_1_4_4_1_6.setBackground(Color.BLACK);
+		btnX_1_4_4_1_6.setBounds(329, 315, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_1_6);
+		
+		JButton btnX_1_4_4_2_1 = new JButton("√");
+		btnX_1_4_4_2_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnX_1_4_4_2_1.setForeground(Color.WHITE);
+		btnX_1_4_4_2_1.setFont(new Font("Lucida Grande", Font.PLAIN, 55));
+		btnX_1_4_4_2_1.setBackground(Color.BLACK);
+		btnX_1_4_4_2_1.setBounds(409, 105, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_2_1);
+		
+		JButton btnX_1_4_4_2_2 = new JButton("EXP");
+		btnX_1_4_4_2_2.setForeground(Color.WHITE);
+		btnX_1_4_4_2_2.setFont(new Font("Lucida Grande", Font.PLAIN, 40));
+		btnX_1_4_4_2_2.setBackground(Color.BLACK);
+		btnX_1_4_4_2_2.setBounds(489, 105, 85, 76);
+		frame.getContentPane().add(btnX_1_4_4_2_2);
+	}
+}

@@ -46,6 +46,10 @@ public class Display extends JLabel implements ActionListener{
 		}
 		else if(input.equals("1/\u0078")) {
 			// insert for inverse
+			// Pressing +/ does not change display to "test"
+			//will look further into issue
+			setText("test");
+			
 		}
 		else if(input.equals("Log")) {
 			// insert code for log
@@ -70,6 +74,7 @@ public class Display extends JLabel implements ActionListener{
 		}
 		else if (input.equals("Clear")) {
 			// insert clear code USING a different method below
+			Clear();
 		}
 		else if(input.equals("Enter")) {
 			// insert code for enter
@@ -90,6 +95,8 @@ public class Display extends JLabel implements ActionListener{
 	
 	public void Clear() {
 		// write method for clear
+		setText(" ");
+		
 	}
 }
 	

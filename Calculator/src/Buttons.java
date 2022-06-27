@@ -63,7 +63,7 @@ public class Buttons extends JPanel{
 		addButton("9", Color.DARK_GRAY);
 		addButton("X", AriColor);
 		addButton("0", Color.DARK_GRAY);
-		addButton("ANS", Color.DARK_GRAY);
+		addButton(".", Color.DARK_GRAY);
 		addButton("Enter", EnterColor);
 		addButton("/", AriColor);
 	

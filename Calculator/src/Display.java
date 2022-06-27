@@ -45,10 +45,7 @@ public class Display extends JLabel implements ActionListener{
 			// insert for sqrt
 		}
 		else if(input.equals("1/\u0078")) {
-			// insert for inverse
-			// Pressing +/ does not change display to "test"
-			//will look further into issue
-			setText("test");
+			setText("-" + getText());
 			
 		}
 		else if(input.equals("Log")) {
@@ -84,6 +81,8 @@ public class Display extends JLabel implements ActionListener{
 		}
 		else if (input.equals("\u232B")) {
 			// insert code for
+			setText(getText().substring(0, getText().length()-1));
+			
 		}
 		else {
 			data = input;

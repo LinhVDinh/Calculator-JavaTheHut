@@ -86,16 +86,43 @@ public class Display extends JLabel implements ActionListener{
 			setText(" ");
 		}
 		else if(input.equals("Enter")) {
-			// insert code for enter
-			// num (math) then check for sign
-			// num (math) toDouble(getText());
-			// return the answer
-			// example of the first one
-			// this may be turned into a switch case
 			// use try and catch (NullPointerException)
-			if (sign.equals("+")) {
-				num = num + toDouble(getText());
-				setText(String.valueOf(num));
+			try
+			{
+				//check sign, perform actions accordingly
+				switch(sign)
+				{
+			
+					case("+"): 
+						num = num + toDouble(getText());
+						setText(String.valueOf(num));
+						break;
+
+					case("-"): 
+						num = num - toDouble(getText());
+						setText(String.valueOf(num));
+						break;
+
+					case("X"): 
+						num = num * toDouble(getText());
+						setText(String.valueOf(num));
+						break;
+
+					case("/"): 
+						num = num / toDouble(getText());
+						setText(String.valueOf(num));
+						break;
+
+					case("^"):
+						num = Math.pow(num, toDouble(getText()));
+						setText(String.valueOf(num));
+						break;
+				}
+
+			}
+			catch(NullPointerException NP)
+			{
+
 			}
 			
 		}

@@ -37,26 +37,32 @@ public class Display extends JLabel implements ActionListener{
 		String input = e.getActionCommand();
 		
 		if (input.equals("+")) {
-			// example of the first arithmetic
 			num = toDouble(getText());
 			setText(" ");
 			sign = "+";
-			
 		}
 		else if (input.equals("-")){
-			// insert subtract code
+			num = toDouble(getText());
+			setText(" ");
+			sign = "-";
 		}
 		else if (input.equals("X")) {
-			// insert mult
+			num = toDouble(getText());
+			setText(" ");
+			sign = "X";
 		}
 		else if (input.equals("/")) {
-			// insert div
+			num = toDouble(getText());
+			setText(" ");
+			sign = "/";
 		}
 		else if(input.equals("EXP")) {
-			// insert for exponent
+			num = toDouble(getText());
+			setText(" ");
+			sign = "^";
 		}
 		else if(input.equals("\u221A")) {
-			// insert for sqrt
+			setText(String.valueOf(Math.pow(toDouble(getText()), 0.5)));
 		}
 		else if(input.equals("1/\u0078")) {
 			setText(inverseFcn(toDouble(getText())));		// inverse function
@@ -155,8 +161,7 @@ public class Display extends JLabel implements ActionListener{
 		number = 1/number;					// inverse
 		return String.valueOf(number);		// return as string
 	}
-
-
+	
 }
 	
 	

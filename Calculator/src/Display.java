@@ -72,12 +72,15 @@ public class Display extends JLabel implements ActionListener{
 		}
 		else if(input.equals("sin")) {
 			// insert for sin
+			setText(String.valueOf(Math.sin(toDouble(getText()))));
 		}
 		else if(input.equals("cos")) {
 			// insert for cos
+			setText(String.valueOf(Math.cos(toDouble(getText()))));
 		}
 		else if(input.equals("tan")) {
 			// insert for tan
+			setText(String.valueOf(Math.tan(toDouble(getText()))));
 		}
 		else if(input.equals("+/-")) {
 			setText(changeSign(toDouble(getText())));		// changing signs

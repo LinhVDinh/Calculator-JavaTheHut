@@ -69,6 +69,7 @@ public class Display extends JLabel implements ActionListener{
 		}
 		else if(input.equals("Log")) {
 			// insert code for log
+			setText(String.valueOf(Math.log(toDouble(getText()))));
 		}
 		else if(input.equals("sin")) {
 			// insert for sin

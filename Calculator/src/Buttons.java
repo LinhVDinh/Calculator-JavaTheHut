@@ -46,8 +46,8 @@ public class Buttons extends JPanel{
 		addButton("cos", Color.LIGHT_GRAY);
 		addButton("tan", Color.LIGHT_GRAY);
 		addButton("+/-", Color.LIGHT_GRAY);
-		addButton("(", Color.LIGHT_GRAY);
-		addButton(")", Color.LIGHT_GRAY);
+		addButton("!", Color.LIGHT_GRAY);
+		addButton("\u03C0", Color.LIGHT_GRAY);
 		addButton("Clear", ClearColor);
 		addButton("\u232B", ClearColor);
 		addButton("1", Color.DARK_GRAY);

@@ -86,11 +86,13 @@ public class Display extends JLabel implements ActionListener{
 		else if(input.equals("+/-")) {
 			setText(changeSign(toDouble(getText())));		// changing signs
 		}
-		else if(input.equals("(")) {
-			// insert for parenthesis
-		}
-		else if(input.equals(")")) {
-			// insert for parenthesis
+		else if(input.equals("!")) {
+			//factorial
+			setText(String.valueOf(factorial(Integer.parseInt(getText().strip()))));
+		}	
+		else if(input.equals("\u03C0")) {
+			//pi
+			setText(getText() + String.valueOf(Math.PI));
 		}
 		else if (input.equals("Clear")) {
 			setText(" ");
@@ -164,6 +166,17 @@ public class Display extends JLabel implements ActionListener{
 	public String inverseFcn(double number) {
 		number = 1/number;					// inverse
 		return String.valueOf(number);		// return as string
+	}
+	//Factorial
+	public int factorial(int number) {
+		if(number == 1)
+		{
+			return 1;
+		}
+		else
+		{
+			return number * factorial(number - 1);
+		}
 	}
 	
 }
